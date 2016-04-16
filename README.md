@@ -1,6 +1,6 @@
 # babel-plugin-transform-dirname-filename
 
-Babel plugin that rewrites __dirname and __filename to static values
+Babel plugin that rewrites `__dirname` and `__filename` to static values.
 
 ## Example
 
@@ -26,7 +26,7 @@ console.log(__dirname);
 console.log(__filename);
 ```
 
-So even though the generated file is a `build/out.js`, then `__dirname` and
+So even though the generated file is a `build/out.js`, the `__dirname` and
 `__filename` values will still reference the source file.
 
 ## Installation
