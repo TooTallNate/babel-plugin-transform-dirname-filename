@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-transform-dirname-filename",
+  "version": "1.0.0",
+  "description": "Babel plugin that rewrites __dirname and __filename to static values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/babel-plugin-transform-dirname-filename.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "dirname",
+    "filename",
+    "__dirname",
+    "__filename",
+    "compile",
+    "rewrite",
+    "static",
+    "value"
+  ],
+  "author": "Nathan Rajlich <n@n8.io> (https://n8.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TooTallNate/babel-plugin-transform-dirname-filename/issues"
+  },
+  "homepage": "https://github.com/TooTallNate/babel-plugin-transform-dirname-filename#readme"
+}
