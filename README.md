@@ -6,14 +6,14 @@ Babel plugin that rewrites `__dirname` and `__filename` to static values.
 
 Source file `t.js`:
 
-```js
+```javascript
 console.log(__dirname);
 console.log(__filename);
 ```
 
 ### Execute normally
 
-``` bash
+```sh
 $ node t.js
 /path/to
 /path/to/t.js
@@ -21,7 +21,7 @@ $ node t.js
 
 ### Before
 
-``` bash
+```sh
 $ babel --out-file build/t.js t.js
 
 $ node build/t.js
@@ -34,7 +34,7 @@ want.
 
 ### After
 
-```js
+```sh
 $ babel --out-file build/t.js --plugins transform-dirname-filename t.js
 
 $ node build/t.js
