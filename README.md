@@ -22,7 +22,7 @@ $ node t.js
 ### Before
 
 ``` bash
-$ babel --out-file build/t.js --plugins transform-dirname-filename t.js
+$ babel --out-file build/t.js t.js
 
 $ node build/t.js
 /path/to/build
