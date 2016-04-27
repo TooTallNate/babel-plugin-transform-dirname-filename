@@ -4,36 +4,54 @@ Babel plugin that rewrites `__dirname` and `__filename` to static values.
 
 ## Example
 
-### In
+Source file `t.js`:
 
 ```js
 console.log(__dirname);
 console.log(__filename);
 ```
 
-### Compile with `babel-cli`
+### Execute normally
 
-```bash
-$ babel --out-file build/out.js --plugins transform-dirname-filename in.js
+``` bash
+$ node t.js
+/path/to
+/path/to/t.js
 ```
 
-### Out
+### Before
+
+``` bash
+$ babel --out-file build/t.js --plugins transform-dirname-filename t.js
+
+$ node build/t.js
+/path/to/build
+/path/to/build/t.js
+```
+
+Notice how the `build` directory is part of the paths, which is _not_ what we
+want.
+
+### After
 
 ```js
-__dirname = "/path/to";
-__filename = "/path/to/in.js";
-console.log(__dirname);
-console.log(__filename);
+$ babel --out-file build/t.js --plugins transform-dirname-filename t.js
+
+$ node build/t.js
+/path/to
+/path/to/t.js
 ```
 
-So even though the generated file is a `build/out.js`, the `__dirname` and
-`__filename` values will still reference the source file.
+So even though the generated file is a `build/t.js`, the `__dirname` and
+`__filename` values will still reference the source file!
+
 
 ## Installation
 
 ```sh
 $ npm install babel-plugin-transform-dirname-filename
 ```
+
 
 ## Usage
 
