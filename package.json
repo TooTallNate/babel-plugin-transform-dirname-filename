@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/TooTallNate/babel-plugin-transform-dirname-filename/issues"
   },
-  "homepage": "https://github.com/TooTallNate/babel-plugin-transform-dirname-filename#readme"
+  "homepage": "https://github.com/TooTallNate/babel-plugin-transform-dirname-filename#readme",
+  "dependencies": {
+    "estree-walker": "^0.2.0"
+  }
 }
