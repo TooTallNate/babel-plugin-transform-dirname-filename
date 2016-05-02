@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-dirname-filename",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Babel plugin that rewrites __dirname and __filename to static values",
   "main": "index.js",
   "scripts": {
