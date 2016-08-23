@@ -49,7 +49,7 @@ So even though the generated file is a `build/t.js`, the `__dirname` and
 ## Installation
 
 ```sh
-$ npm install babel-plugin-transform-dirname-filename
+$ npm install babel-plugin-transform-dirname-filename --save-dev
 ```
 
 
