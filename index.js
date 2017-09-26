@@ -23,13 +23,13 @@ function uses (prog, variables) {
 
 
 function inject (t, prog, variable, value) {
-  var operator = '=';
+  var ident = t.identifier(variable);
+  var string = t.stringLiteral(value);
 
-  var left = t.identifier(variable);
-  var right = t.stringLiteral(value);
-  var expr = t.expressionStatement(t.assignmentExpression(operator, left, right));
+  var declarator = t.variableDeclarator(ident, string);
+  var declaration = t.variableDeclaration('var', [declarator]);
 
-  prog.scope.block.body.unshift(expr);
+  prog.scope.block.body.unshift(declaration);
 }
 
 
